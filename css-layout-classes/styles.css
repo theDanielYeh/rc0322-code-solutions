@@ -1,0 +1,27 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.c-one-third {
+  width: calc(100% / 3);
+}
+
+.c-two-thirds {
+  width: calc(100% * 2 / 3);
+}
+
+.c-one-fourth {
+  width: 25%;
+}
+
+img {
+  width: 100%;
+}
+
+/* <--! Use percentage widths on your column- classes.
+Set your images to 100% of the width of their containing block (the column they're in). --> */
