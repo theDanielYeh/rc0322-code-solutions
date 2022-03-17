@@ -1,0 +1,79 @@
+body {
+  font-family: Karla, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.norow {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  letter-spacing: 0.3rem;
+}
+
+p.header {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  padding: 0 8rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.column-one-half {
+  width: 50%;
+  display: flex;
+}
+
+p.body {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  padding-right: 50px;
+}
+
+img {
+  width: 100px;
+}
+
+.column-three-fourths {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+button {
+  font-family: Karla, sans-serif;
+  padding: 8px 50px;
+  text-transform: uppercase;
+  color: #d86964;
+  border-color: #d86964;
+  background-color: white;
+  border-style: solid;
+  font-weight: bold;
+  box-shadow: rgb(66 66 64) 5px 5px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: grabbing;
+  background-color: #d86964;
+  color: white;
+  transform: translateX(-300px) translateY(-300px);
+}
+
+button:active {
+  transform: translateX(-5px) translateY(-5px);
+}
