@@ -20,7 +20,7 @@ function startsWithJ(string) {
 }
 
 function isOldEnoughToDrink(person) {
-  return person.age > 21;
+  return person.age >= 21;
 }
 
 function isOldEnoughToDrive(person) {
