@@ -1,4 +1,4 @@
-var userClicks = [];
+var userClicks = 0;
 
 var $hotButton = document.querySelector('.hot-button');
 var $clickCount = document.querySelector('.click-count');
