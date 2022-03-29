@@ -1,0 +1,35 @@
+.mother-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  background-color: white;
+}
+
+.mother-black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  background-color: rgb(26 24 24);
+}
+
+button.yellow {
+  background-color: #faea84;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0.1px 0.1px 7px 3px yellow;
+}
+
+button.black {
+  background-color: #3a3939;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0.1px -15px 7px 3px black;
+}
