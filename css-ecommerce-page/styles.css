@@ -1,0 +1,39 @@
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+.mother-container {
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  max-width: 20%;
+  margin: 15px;
+}
+
+img {
+  max-width: 240px;
+  min-height: 360px;
+}
+
+span:last-child {
+  color: lightgray;
+}
+
+p.price > span:first-child {
+  color: black;
+  background-color: #fff8f2;
+}
