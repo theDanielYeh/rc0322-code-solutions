@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+span.red {
+  color: red;
+  text-decoration: underline red 5px solid;
+}
+
+span.green {
+  color: rgb(47 255 92);
+}
