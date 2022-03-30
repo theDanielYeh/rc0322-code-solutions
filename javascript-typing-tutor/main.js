@@ -6,6 +6,7 @@ function keylogger(event) {
   if (event.key === $phrase[index].textContent) {
     $phrase[index].className = 'green';
     index++;
+    $phrase[index].className = 'black';
   } else {
     $phrase[index].className = 'red';
   }
