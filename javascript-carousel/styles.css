@@ -1,0 +1,39 @@
+.mother-container {
+  max-width: 1000px;
+  min-width: 750px;
+  border: solid black;
+  margin: 10% 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.col-left-arrow,
+.col-right-arrow {
+  width: 25%;
+}
+
+/* .fa-angle-left,
+.fa-angle-right {
+  width: 10rem;
+  height: 10rem;
+} */
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.r2 {
+  margin-bottom: 10%;
+  margin-top: 6%;
+}
+
+.r2 > i {
+  padding: 1rem;
+}
