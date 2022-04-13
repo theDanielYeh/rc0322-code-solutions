@@ -7,10 +7,10 @@ function Account(number, holder) {
 
 Account.prototype.deposit = function (amount) {
   if (Number.isInteger(amount) === true && amount > 0) {
-    var A = new Transaction();
-    A.type = 'deposit';
-    A.amount = amount;
-    this.transactions.push(A);
+    var $newDeposit = new Transaction('deposit', amount);
+    // A.type = 'deposit';
+    // A.amount = amount;
+    this.transactions.push($newDeposit);
 
     return true;
   } else {
@@ -20,10 +20,10 @@ Account.prototype.deposit = function (amount) {
 
 Account.prototype.withdraw = function (amount) {
   if (Number.isInteger(amount) === true && amount > 0) {
-    var A = new Transaction();
-    A.type = 'withdrawal';
-    A.amount = amount;
-    this.transactions.push(A);
+    var $newWithdraw = new Transaction('withdrawal', amount);
+    // A.type = 'withdrawal';
+    // A.amount = amount;
+    this.transactions.push($newWithdraw);
 
     return true;
   } else {

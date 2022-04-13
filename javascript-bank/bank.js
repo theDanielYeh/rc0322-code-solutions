@@ -6,11 +6,13 @@ function Bank() {
 
 Bank.prototype.openAccount = function (holder, balance) {
   if (Number.isInteger(balance) === true && balance > 0) {
-    var $newAccount = new Account();
-    $newAccount.number = this.nextAccountNumber;
-    $newAccount.holder = holder;
+    var $newAccount = new Account(this.nextAccountNumber, holder);
+    // manual coding below works too
+    // $newAccount.number = this.nextAccountNumber;
+    // $newAccount.holder = holder;
     // $newAccount(this.nextAccountNumber, holder);
     $newAccount.deposit(balance);
+    // manual coding below works too
     // $newAccount.transactions.type = 'deposit';
     // $newAccount.transactions.amount = balance;
     this.accounts.push($newAccount);
