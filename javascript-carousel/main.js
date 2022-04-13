@@ -10,7 +10,7 @@ function doThis(event) {
     if ($dot[i].className === 'fas fa-dot-circle') {
       $dot[i].className = 'fas fa-circle';
       $img[i].className = 'hidden';
-    } else if (event.target.className === 'fas fa-circle') {
+    } if (event.target.className === 'fas fa-circle') {
       event.target.className = 'fas fa-dot-circle';
       for (var j = 0; j < $dot.length; j++) {
         if ($dot[j].className === 'fas fa-dot-circle') {
