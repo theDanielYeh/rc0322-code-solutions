@@ -42,4 +42,5 @@ function handleJokeSubmission(event) {
   const { setup, punchline } = event.target.elements;
   jokester.tellJoke(setup.value, punchline.value);
 }
+
 $jokeForm.addEventListener('submit', handleJokeSubmission);
