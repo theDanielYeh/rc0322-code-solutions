@@ -35,17 +35,17 @@ app.post('/api/grades', (req, res, next) => {
     return res.status(400).json('Error: Name is a required field');
   } else if (!course) {
     return res.status(400).json('Error: Course is a required field');
-  } else if (!score || score < 0 || score > 100) {
+  } else if (!score || score < 0 || score > 100 || isNaN(score) || !Number.isInteger(score)) {
     return res.status(400).json('Error: Score is a required field and must be 0-100');
   }
 
   const sql = `
-    insert into "grades" ("name", course, score)
-    values ($3, $1, $2)
+    insert into grades (name, course, score)
+    values ($1, $2, $3)
     returning *
   `;
-  console.log(req.params);
-  db.query(sql, [course, name, score])
+  // console.log(req.params);
+  db.query(sql, [name, course, score])
     .then(result => {
       res.status(201).json(result.rows[0]);
     })
