@@ -16,18 +16,13 @@ export default class CustomButton extends React.Component {
   }
 
   render() {
-    return this.state.count < 3
-      ? <button className="start-button" onClick={this.handleClick}>Hot Button!</button>
-      : this.state.count < 6
-        ? <button className="purple-button" onClick={this.handleClick}>Hot Button!</button>
-        : this.state.count < 9
-          ? <button className="lav-button" onClick={this.handleClick}>Hot Button! </button>
-          : this.state.count < 12
-            ? <button className="coral-button" onClick={this.handleClick}>Hot Button! </button>
-            : this.state.count < 15
-              ? <button className="orange-button" onClick={this.handleClick}>Hot Button! </button>
-              : this.state.count < 18
-                ? <button className="yellow-button" onClick={this.handleClick}>Hot Button! </button>
-                : <button className="white-button" onClick={this.handleClick}>Hot Button! </button>;
-  }
+    const buttonType = this.state.count < 3 ? "start-button"
+      : this.state.count < 6 ? "purple-button"
+        : this.state.count < 9 ? "lav-button"
+          : this.state.count < 12 ? "coral-button"
+            : this.state.count < 15 ? "orange-button"
+              : this.state.count < 18 ? "yellow-button"
+                : "white-button";
+    return <button className={buttonType} onClick={this.handleClick}>Hot Button!</button>
+    }
 }
