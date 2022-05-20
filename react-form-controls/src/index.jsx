@@ -31,11 +31,11 @@ class RegistrationForm extends React.Component {
     <form onSubmit={this.handleSubmit}>
       <label htmlFor="">
        Username:
-        <input type="username" onChange={this.handleUsernameChange} value={this.state.username} />
+        <input type="text" name="username" onChange={this.handleUsernameChange} value={this.state.username} />
       </label>
       <label htmlFor="">
         Password:
-        <input type="password" onChange={this.handlePasswordChange} value={this.state.password} />
+        <input type="password" name="password" onChange={this.handlePasswordChange} value={this.state.password} />
       </label>
       <button type="submit" value="submit">Sign Up</button>
     </form>
