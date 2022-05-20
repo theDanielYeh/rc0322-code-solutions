@@ -1,0 +1,38 @@
+.purple-button {
+  font-size: 15px;
+  color: white;
+  background-color: #351c75;
+}
+
+.lav-button {
+  font-size: 20px;
+  color: white;
+  background-color: #674ea7;
+}
+
+.coral-button {
+  font-size: 25px;
+  color: white;
+  background-color: #e06666;
+}
+
+.orange-button {
+  font-size: 30px;
+  background-color: orange;
+}
+
+.yellow-button {
+  font-size: 35px;
+  background-color: yellow;
+}
+
+.white-button {
+  font-size: 400px;
+  color: white;
+  background-color: red;
+}
+
+.start-button {
+  font-size: 10px;
+  background-color: lightblue;
+}
