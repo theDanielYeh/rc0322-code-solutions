@@ -1,0 +1,32 @@
+{
+  "name": "rc0322-code-solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theDanielYeh/rc0322-code-solutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theDanielYeh/rc0322-code-solutions/issues"
+  },
+  "homepage": "https://github.com/theDanielYeh/rc0322-code-solutions#readme",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "babel-laoder": "^0.0.1-security",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
