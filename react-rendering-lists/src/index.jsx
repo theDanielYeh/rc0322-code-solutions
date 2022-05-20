@@ -10,7 +10,7 @@ const pokedex = [
 ];
 
 function RenderDOM(props) {
-  return <ul>{pokedex.map(x => <li>{x.name}</li>)}</ul>;
+  return <ul>{pokedex.map(x => <li key={x.number}>{x.name}</li>)}</ul>;
 }
 
 const container = document.querySelector('#root');
