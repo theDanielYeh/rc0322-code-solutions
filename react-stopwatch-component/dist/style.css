@@ -1,0 +1,26 @@
+.container  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stopwatch {
+  border: solid black 5px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.displayTime {
+  font-size: 100px;
+}
+
+.stopwatch:hover,
+.fas:hover {
+  cursor: pointer;
+}
