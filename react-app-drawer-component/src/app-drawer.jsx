@@ -23,7 +23,6 @@ export default class Hamburger extends React.Component {
       return (
         <div className="outer">
           <i class="fas fa-hamburger fa-3x" onClick={this.handleClick}></i>
-          {/* <img src="../img/Roadster.png" alt="" /> */}
         </div>
       )
     } else {
