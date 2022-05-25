@@ -64,7 +64,7 @@ export default class App extends React.Component {
         return res.json()
       })
       .then(items => {
-        let newArray = this.state.todos;
+        const newArray = [...this.state.todos];
         newArray.push(items);
         this.setState({
           todos: newArray
@@ -115,7 +115,7 @@ export default class App extends React.Component {
       })
       .then(items => {
         console.log(items)
-        let newArray = this.state.todos;
+        const newArray = [...this.state.todos];
         newArray.splice(matchId, 1, items);
         this.setState({
           todos: newArray
