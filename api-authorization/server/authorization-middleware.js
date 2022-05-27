@@ -12,7 +12,8 @@ function authorizationMiddleware(req, res, next) {
    * Call next() (with no arguments) to let Express know to advance to its next route or middleware.
    */
   const token = req.get('X-Access-Token');
-
+  console.log(token);
+  console.log(req.headers);
   if (!token) {
     throw new ClientError(401, 'user authentication required');
   }

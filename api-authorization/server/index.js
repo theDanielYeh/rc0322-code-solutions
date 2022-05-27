@@ -102,6 +102,8 @@ app.post('/api/flashcards', (req, res, next) => {
 
 app.get('/api/flashcards', (req, res, next) => {
   const { userId } = req.user;
+  console.log(req.user);
+  console.log(userId);
   const sql = `
     select *
       from "flashcards"
