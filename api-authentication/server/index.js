@@ -80,11 +80,9 @@ app.post('/api/auth/sign-in', (req, res, next) => {
         argon2
           .verify(result.rows[0].hashedPassword, password)
           .then(isMatching => {
-            console.log('Does your password match?', isMatching);
             if (!isMatching) {
               res.status(401).json('invalid login');
             } else {
-              console.log('hello');
               const payload = {
                 userId: result.rows[0].userId,
                 username: username
