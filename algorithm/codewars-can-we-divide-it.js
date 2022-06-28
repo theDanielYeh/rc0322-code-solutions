@@ -20,3 +20,6 @@ function isDivideBy(number, a, b) {
       ? false
       : true;
 }
+
+
+const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
