@@ -14,3 +14,5 @@ function areYouPlayingBanjo(name) {
       ? name + " plays banjo"
       : name + " does not play banjo";
 }
+
+// can the code be optimized?
