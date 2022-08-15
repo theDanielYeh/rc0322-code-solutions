@@ -15,3 +15,7 @@
 function gimme(triplet) {
   return 3 - triplet.indexOf(Math.min(...triplet)) - triplet.indexOf(Math.max(...triplet));
 }
+
+function gimme(a) {
+  return a.indexOf(a.concat().sort(function (a, b) { return a - b })[1])
+}
